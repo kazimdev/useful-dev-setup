@@ -1,0 +1,33 @@
+#Running a Cloned Laravel Project
+
+Here are the steps to get it up and running:
+1. Install Dependencies
+composer install
+
+2. Set Up Environment File
+cp .env.example .env
+
+Then open .env and configure your database credentials and other settings.
+
+3. Generate Application Key
+php artisan key:generate
+
+4. Set Up the Database
+Create a database (e.g., in MySQL), update .env with its name/credentials, then run:
+php artisan migrate
+
+If the project has seed data:
+php artisan db:seed
+
+5. Install Frontend Dependencies (if applicable)
+npm install
+npm run dev   # or `npm run build` for production
+
+6. Set Storage Permissions
+bashchmod -R 775 storage bootstrap/cache
+Or on some setups:
+bashphp artisan storage:link
+
+7. Start the Development Server
+bashphp artisan serve
+Then visit http://127.0.0.1:8000 in your browser.

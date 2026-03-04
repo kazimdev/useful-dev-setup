@@ -1,3 +1,5 @@
+#Basic Linux Commands
+
 #Custom Screen resolution commands:
 
 cvt "1376x770_60.00"
@@ -44,3 +46,4 @@ wslview readme.html
 # Zip files/folder
 sudo apt-get install zip unzip -y
 zip -r zipped.zip folder_name
+

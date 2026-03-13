@@ -1,2 +1,3 @@
-# useful-dev-steps-and-commands
+# useful dev setups and commands
+
 
